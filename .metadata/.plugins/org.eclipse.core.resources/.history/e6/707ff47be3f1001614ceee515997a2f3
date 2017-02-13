@@ -1,0 +1,21 @@
+package zj.test.web.httpServer;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class MyHTTPServer {
+	public static void main(String[] args) throws Exception {
+		ServerSocket serverSocket;
+
+		int portNumber = 8888;
+		serverSocket = new ServerSocket(portNumber);
+
+		while (true) {
+
+			Socket socket = serverSocket.accept();
+
+		}
+
+	}
+}
